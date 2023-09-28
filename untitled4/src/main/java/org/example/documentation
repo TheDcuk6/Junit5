@@ -1,0 +1,32 @@
+Car.java
+
+1.Overview
+The Car class represents a car model with attributes like make, model, year, and a running status. It provides methods to start and stop the car's engine and check if it's running.
+
+2.Class Members
+private String make: Car make (brand).
+private String model: Car model.
+private int year: Year of manufacture.
+private boolean running: Engine running status.
+
+3.Constructors
+public Car(String make, String model, int year): Initializes make, model, and year. Default running status is false.
+
+4.Methods
+public void start(): Sets running to true.
+public void stop(): Sets running to false.
+public boolean isRunning(): Returns true if running, else false.
+public String getMakeAndModel(): Returns "Make Model".
+
+
+CarTest.java
+
+1.Overview
+CarTest contains JUnit tests for the Car class, verifying start, stop, running status, and make/model retrieval methods.
+
+2.Methods
+@BeforeEach void setUp(): Initializes a Car object.
+@Test void testStart(): Tests start() method.
+@Test void testStop(): Tests stop() method.
+@Test void testIsRunningInitiallyFalse(): Tests initial isRunning() state.
+@Test void testGetMakeAndModel(): Tests getMakeAndModel() method.
